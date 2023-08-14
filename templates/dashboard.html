@@ -1,0 +1,16 @@
+<!-- templates/dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Compliance Monitoring Dashboard</title>
+    <!-- Include the Plotly.js library for interactive charts. -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Model Compliance Monitoring Dashboard</h1>
+     <!-- This div will contain the rendered fairness chart. -->
+    <div>{{ fairness_chart | safe }}</div>
+    <!-- This div will contain the rendered bias chart. -->
+    <div>{{ bias_chart | safe }}</div>
+</body>
+</html>
